@@ -94,6 +94,7 @@ main{
     font-size: 18px;
     padding-left: 20px;
 }
+
 .login-form input::placeholder{
     font-size: 18px;
 }
@@ -102,6 +103,18 @@ main{
     font-size: 18px;
     margin-bottom: 10px;
 }
+#reset-password::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #7a16b4;
+    display: block;
+    transition: 0.3s ease-out;
+}
+#reset-password:hover::after{
+    width: 100%;
+}
+
 .sign-in button{
     width: 200px;
     height: 50px;
