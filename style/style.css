@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(164,235,255);
+    background: linear-gradient(45deg, rgba(164,235,255,1) 15%, rgba(160,215,248,1) 29%, rgba(154,185,237,1) 39%, rgba(142,125,216,1) 56%, rgba(139,109,211,1) 66%, rgba(131,69,197,1) 77%, rgba(122,22,180,1) 88%);
+
+}
+
+main{
+    display: flex;
+    width: 70%;
+    height: 70%;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 5px 12px 60px 1px;
+}
+
+.login{
+    width: 50%;
+    height: 100%;
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    padding-top: 80px;
+    
+}
+.sign-in h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.social-media{
+    display: flex;
+    gap: 30px;
+}
+.social-container{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+.social-container img{
+    padding-top: 15px;
+    width: 42px;
+}
+.social-container:hover{
+    background-color: #dddddd;
+}
+
+.sign-in p{
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.login-form input{
+    background-color: #dddddd;
+    width: 20vw;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+
+    outline: none;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.login-form input::placeholder{
+    font-size: 18px;
+}
+
+.sign-in a{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.sign-in button{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    background-color: #7a16b4;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 10px;
+    transition: all ease 0.5s;
+}
+.sign-in button:hover{
+    background-color: white;
+    border: 0.5px solid black;
+    color: #7a16b4;
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #7a16b4;
+    border-radius: 14rem 50px 50px 14rem;  
+    color: white;
+}
+
+.sign-up h1{
+    padding-top: 150px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.sign-up h4{
+    font-size: 24px;
+}
+
+.sign-up button{
+    width: 250px;
+    height: 70px;
+    background-color: #7a16b4;
+    border: 5px solid white;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.sign-up button:hover{
+    background-color: #ffffff;
+    color: black;
+
+}
+
+@media only screen and (max-width: 1680px){
+
+    @media screen and (max-width: 1633px) {
+        .sign-up h4{
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width: 1497px) {
+        .sign-up h4{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 1361px) {
+        .sign-up h4{
+            font-size: 18px;
+        }
+        .sign-up h1{
+            font-size: 44px;
+            margin-bottom: 35px;
+        }
+    }
+    @media screen and (max-width: 1225px) {
+        .sign-up h4{
+            font-size: 16px;
+        }
+        .sign-up h1{
+            font-size: 44px;
+            margin-bottom: 35px;
+        }
+    }
+    @media screen and (max-width: 1089px) {
+        .sign-up h4{
+            font-size: 15px;
+        }
+        .sign-up h1{
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:430px){
+    main{
+        flex-direction: column;
+    }
+   
+    
+    .sign-in{
+        width: 100%;
+        height: 100%;
+        padding-top: 40px;
+        
+    }
+    .login{
+        height: 65%;
+        width: 100%;
+    }
+    
+    
+    .sign-in h1{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .social-media{
+        gap: 30px;
+    }
+    .social-container{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    
+    .social-container img{
+        padding-top: 15px;
+        width: 26px;
+    }
+    
+    .sign-in p{
+        margin-top: 12px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    
+    .login-form form{
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .login-form input{
+        width: 230px;
+        height: 40px;
+        font-size: 18px;
+        padding-left: 20px; 
+    }
+    .login-form input::placeholder{
+        font-size: 18px;
+    }
+    
+    .sign-in a{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sign-in button{
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+    }
+    .sign-in button:hover{
+        background-color: white;
+    }
+
+    .sign-up{
+        width: 100%;
+        height: 35%;
+        border-radius: 12rem 12rem 50px 50px;  
+    }
+    .sign-up h1{
+        padding-top: 70px;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+    .sign-up h4{
+        font-size: 11px;
+    }
+    
+    .sign-up button{
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 15px;
+        border: 3px solid white
+    }
+    
+
+}
+
+
+@media only screen and (max-width:390px){
+    main{
+        flex-direction: column;
+    }
+    
+    .sign-in{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        
+    }
+    .login{
+        height: 65%;
+        width: 100%;
+    }
+    
+    
+    .sign-in h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .social-media{
+        gap: 30px;
+    }
+    .social-container{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 5px;
+    }
+    
+    .social-container img{
+        padding-top: 10px;
+        width: 26px;
+    }
+    
+    .sign-in p{
+        margin-top: 8px;
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+    
+    .login-form form{
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .login-form input{
+        width: 230px;
+        height: 40px;
+        font-size: 18px;
+        padding-left: 20px; 
+    }
+    
+    .sign-in a{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sign-in button{
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .sign-up{
+        width: 100%;
+        height: 35%;
+        border-radius: 8rem 8rem 50px 50px;  
+    }
+    .sign-up h1{
+        padding-top: 50px;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .sign-up h4{
+        font-size: 10px;
+    }
+    
+    .sign-up button{
+        width: 120px;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+    
+
+}
+
+@media only screen and (max-width:375px){
+    main{
+        flex-direction: column;
+    }
+    
+    .sign-in{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        
+    }
+    .login{
+        height: 65%;
+        width: 100%;
+    }
+    
+    
+    .sign-in h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .social-media{
+        gap: 30px;
+    }
+    .social-container{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 5px;
+    }
+    
+    .social-container img{
+        padding-top: 10px;
+        width: 26px;
+    }
+    
+    .sign-in p{
+        margin-top: 8px;
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+    
+    .login-form form{
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .login-form input{
+        width: 200px;
+        height: 25px;
+        font-size: 18px;
+        padding-left: 20px; 
+    }
+    .login-form input::placeholder{
+        font-size: 16px;
+    }
+    
+    .sign-in a{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sign-in button{
+        width: 150px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .sign-up{
+        width: 100%;
+        height: 35%;
+        border-radius: 8rem 8rem 50px 50px;  
+    }
+    .sign-up h1{
+        padding-top: 32px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .sign-up h4{
+        font-size: 9px;
+    }
+    
+    .sign-up button{
+        width: 120px;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+    
+
+}
