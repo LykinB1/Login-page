@@ -15,7 +15,7 @@ body{
     height: 100vh;
     background: rgb(164,235,255);
     background: linear-gradient(45deg, rgba(164,235,255,1) 15%, rgba(160,215,248,1) 29%, rgba(154,185,237,1) 39%, rgba(142,125,216,1) 56%, rgba(139,109,211,1) 66%, rgba(131,69,197,1) 77%, rgba(122,22,180,1) 88%);
-
+    overflow: hidden;
 }
 
 main{
@@ -474,5 +474,14 @@ main{
         margin-top: 18px;
     }
     
+
+}
+
+@media only screen and (max-width:340px){
+    main{
+        flex-direction: column;
+        width: 70%;
+        height: 70%;
+    }
 
 }
