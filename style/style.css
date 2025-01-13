@@ -99,6 +99,17 @@ main{
     font-size: 18px;
 }
 
+#login-form-password{
+    position: relative;
+}
+#login-form-password i{
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    color: #797878;
+}
+
 .sign-in a{
     font-size: 18px;
     margin-bottom: 10px;
@@ -215,6 +226,8 @@ main{
 
 @media only screen and (max-width:430px){
     main{
+        width: 90%;
+        height: 90%;
         flex-direction: column;
     }
    
@@ -226,13 +239,13 @@ main{
         
     }
     .login{
-        height: 65%;
+        height: 55%;
         width: 100%;
     }
     
     
     .sign-in h1{
-        font-size: 32px;
+        font-size: 36px;
         margin-bottom: 20px;
     }
     
@@ -263,7 +276,105 @@ main{
     }
     
     .login-form input{
-        width: 230px;
+        width: 300px;
+        height: 45px;
+        font-size: 18px;
+        padding-left: 20px; 
+    }
+    .login-form input::placeholder{
+        font-size: 18px;
+    }
+    
+    .sign-in a{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sign-in button{
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+    }
+    .sign-in button:hover{
+        background-color: white;
+    }
+
+    .sign-up{
+        width: 100%;
+        height: 45%;
+        border-radius: 12rem 12rem 50px 50px;  
+    }
+    .sign-up h1{
+        padding-top: 90px;
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    .sign-up h4{
+        font-size: 14px;
+    }
+    
+    .sign-up button{
+        width: 200px;
+        height: 55px;
+        font-size: 24px;
+        margin-top: 30px;
+        border: 3px solid white
+    }
+    
+
+}
+@media screen and (max-width:430px) and (max-height:736px){
+    main{
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+    }
+   
+    
+    .sign-in{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        
+    }
+    .login{
+        height: 65%;
+        width: 100%;
+    }
+    
+    
+    .sign-in h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .social-media{
+        gap: 30px;
+    }
+    .social-container{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    
+    .social-container img{
+        padding-top: 15px;
+        width: 26px;
+    }
+    
+    .sign-in p{
+        margin-top: 12px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    
+    .login-form form{
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .login-form input{
+        width: 300px;
         height: 40px;
         font-size: 18px;
         padding-left: 20px; 
@@ -291,19 +402,19 @@ main{
         border-radius: 12rem 12rem 50px 50px;  
     }
     .sign-up h1{
-        padding-top: 70px;
+        padding-top: 50px;
         margin-bottom: 10px;
-        font-size: 26px;
+        font-size: 28px;
     }
     .sign-up h4{
-        font-size: 11px;
+        font-size: 12px;
     }
     
     .sign-up button{
         width: 150px;
-        height: 40px;
-        font-size: 20px;
-        margin-top: 15px;
+        height: 50px;
+        font-size: 22px;
+        margin-top: 30px;
         border: 3px solid white
     }
     
@@ -313,44 +424,47 @@ main{
 
 @media only screen and (max-width:390px){
     main{
+        width: 95%;
+        height: 95%;
         flex-direction: column;
     }
+   
     
     .sign-in{
         width: 100%;
         height: 100%;
-        padding-top: 20px;
+        padding-top: 40px;
         
     }
     .login{
-        height: 65%;
+        height: 55%;
         width: 100%;
     }
     
     
     .sign-in h1{
-        font-size: 28px;
-        margin-bottom: 15px;
+        font-size: 36px;
+        margin-bottom: 20px;
     }
     
     .social-media{
         gap: 30px;
     }
     .social-container{
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 5px;
     }
     
     .social-container img{
-        padding-top: 10px;
+        padding-top: 15px;
         width: 26px;
     }
     
     .sign-in p{
-        margin-top: 8px;
-        margin-bottom: 6px;
-        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+        font-size: 18px;
     }
     
     .login-form form{
@@ -360,10 +474,13 @@ main{
     }
     
     .login-form input{
-        width: 230px;
-        height: 40px;
+        width: 300px;
+        height: 45px;
         font-size: 18px;
         padding-left: 20px; 
+    }
+    .login-form input::placeholder{
+        font-size: 18px;
     }
     
     .sign-in a{
@@ -375,86 +492,94 @@ main{
         height: 50px;
         font-size: 22px;
     }
+    .sign-in button:hover{
+        background-color: white;
+    }
 
     .sign-up{
         width: 100%;
-        height: 35%;
-        border-radius: 8rem 8rem 50px 50px;  
+        height: 45%;
+        border-radius: 12rem 12rem 50px 50px;  
     }
     .sign-up h1{
-        padding-top: 50px;
-        margin-bottom: 10px;
-        font-size: 22px;
+        padding-top: 90px;
+        margin-bottom: 20px;
+        font-size: 32px;
     }
     .sign-up h4{
-        font-size: 10px;
+        font-size: 14px;
     }
     
     .sign-up button{
-        width: 120px;
-        font-size: 20px;
-        margin-top: 18px;
+        width: 200px;
+        height: 55px;
+        font-size: 24px;
+        margin-top: 30px;
+        border: 3px solid white
     }
     
 
 }
 
-@media only screen and (max-width:375px){
+@media only screen and (max-width:375px) and (max-height:667px){
     main{
+        width: 95%;
+        height: 95%;
         flex-direction: column;
     }
+   
     
     .sign-in{
         width: 100%;
         height: 100%;
-        padding-top: 20px;
+        padding-top: 15px;
         
     }
     .login{
-        height: 65%;
+        height: 60%;
         width: 100%;
     }
     
     
     .sign-in h1{
-        font-size: 28px;
-        margin-bottom: 15px;
+        font-size: 36px;
+        margin-bottom: 10px;
     }
     
     .social-media{
         gap: 30px;
     }
     .social-container{
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         margin-bottom: 5px;
     }
     
     .social-container img{
-        padding-top: 10px;
+        padding-top: 15px;
         width: 26px;
     }
     
     .sign-in p{
-        margin-top: 8px;
-        margin-bottom: 6px;
-        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        font-size: 16px;
     }
     
     .login-form form{
         flex-direction: column;
-        gap: 15px;
-        margin-bottom: 10px;
+        gap: 25px;
+        margin-bottom: 20px;
     }
     
     .login-form input{
-        width: 200px;
-        height: 25px;
+        width: 300px;
+        height: 45px;
         font-size: 18px;
         padding-left: 20px; 
     }
     .login-form input::placeholder{
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .sign-in a{
@@ -462,39 +587,38 @@ main{
         margin-bottom: 10px;
     }
     .sign-in button{
-        width: 150px;
-        height: 40px;
+        width: 200px;
+        height: 50px;
         font-size: 22px;
+    }
+    .sign-in button:hover{
+        background-color: white;
     }
 
     .sign-up{
         width: 100%;
-        height: 35%;
-        border-radius: 8rem 8rem 50px 50px;  
+        height: 40%;
+        border-radius: 12rem 12rem 50px 50px;  
     }
     .sign-up h1{
-        padding-top: 32px;
+        padding-top: 50px;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 28px;
     }
     .sign-up h4{
-        font-size: 9px;
+        font-size: 12px;
     }
     
     .sign-up button{
         width: 120px;
+        height: 40px;
         font-size: 20px;
-        margin-top: 18px;
+        margin-top: 30px;
+        border: 3px solid white
     }
     
 
 }
 
-@media only screen and (max-width:340px){
-    main{
-        flex-direction: column;
-        width: 70%;
-        height: 70%;
-    }
 
-}
+
